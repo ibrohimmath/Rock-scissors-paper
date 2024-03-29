@@ -1,0 +1,75 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic);
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	font-family: "open-sans", sans-serif;
+}
+
+body {
+	background: rgb(10, 27, 58);
+	color: white;
+}
+
+.left {
+  transform: scaleX(-1);
+}
+
+.hidden {
+	display: none;
+}
+
+.btn {
+	width: 15vw;
+	background: orangered;
+	color: white;
+	padding: 10px 40px;
+	cursor: pointer;
+	transition-duration: 0.4s;
+	border-radius: 5px;
+	font-size: 17px;
+}
+.btn:hover {
+	color: orangered;
+	background: white;
+	border: 2px solid orangered;
+}
+
+.container {
+	width: 65vw;
+	margin: 0 auto;
+}
+
+.row__first, .row__second, .row__third, .row__fourth {
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.row__first {
+	margin-top: 6vh;
+	display: flex;
+	justify-content: space-between;
+	font-weight: 600;
+	text-align: center;
+	line-height: 30px;
+	
+	font-size: 20px;
+}
+.row__second {
+	margin-top: 20vh;
+	font-weight: 700;
+	font-size: 45px;
+}
+.row__third {
+	margin-top: 8vh;
+}
+.row__fourth {
+	margin-top: 6vh;
+	flex-direction: column;
+	gap: 20px;
+}
