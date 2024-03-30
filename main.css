@@ -19,14 +19,12 @@ body {
 }
 
 .hidden {
-	display: none;
+	display: none !important;
 }
 
 .btn {
-	width: 15vw;
 	background: orangered;
 	color: white;
-	padding: 10px 40px;
 	cursor: pointer;
 	transition-duration: 0.4s;
 	border-radius: 5px;
@@ -38,12 +36,26 @@ body {
 	border: 2px solid orangered;
 }
 
+.green {
+	background: rgb(12, 140, 12);
+	color: white;
+	cursor: pointer;
+	transition-duration: 0.4s;
+	border-radius: 5px;
+	font-size: 17px;
+}
+.green:hover {
+	color: rgb(12, 140, 12);
+	background: white;
+	border: 2px solid rgb(12, 140, 12);
+}
+
 .container {
 	width: 65vw;
 	margin: 0 auto;
 }
 
-.row__first, .row__second, .row__third, .row__fourth {
+.row__first, .row__second, .row__third, .row__fourth, .row__fifth {
 	margin: 0 auto;
 	display: flex;
 	align-items: center;
@@ -51,7 +63,7 @@ body {
 }
 
 .row__first {
-	margin-top: 6vh;
+	margin-top: 4vh;
 	display: flex;
 	justify-content: space-between;
 	font-weight: 600;
@@ -61,15 +73,115 @@ body {
 	font-size: 20px;
 }
 .row__second {
-	margin-top: 20vh;
+	text-align: center;
+	margin-top: 6vh;
 	font-weight: 700;
 	font-size: 45px;
 }
 .row__third {
-	margin-top: 8vh;
+	margin-top: 6vh;
+	gap: 50px;
 }
 .row__fourth {
-	margin-top: 6vh;
-	flex-direction: column;
+	width: 80%;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 4vh;
 	gap: 20px;
+}
+
+.game__player, .game__computer {
+	width: 15vw;
+	padding: 10px 40px;
+}
+
+.shape {
+	padding: 8px 20px;
+}
+
+.choice__first, .choice__second {
+	display: flex;
+	gap: 15px;
+}
+
+.row__fifth {
+	margin-top: 60px;
+	gap: 60px;
+}
+
+@media (max-width: 1080px) {
+	.container {
+		width: 80vw;
+	}
+	.btn {
+		font-size: 15px;
+	}
+	.game__player, .game__computer {
+		padding: 7px 28px;
+	}
+	.shape {
+		padding: 4px 10px;
+	}
+	img {
+		width: 250px;
+	}
+	.row__first {
+		font-size: 16px;
+	}
+	.row__second {
+		font-size: 33px;
+	}
+	.row__third {
+		gap: 25px;
+	}
+	.row__fourth {
+		gap: 16px;
+		width: 90%;	
+	}
+	.row__fifth {
+		gap: 30px;
+	}
+}
+
+@media (max-width: 768px) {
+	.container {
+		width: 90vw;
+	}
+	.btn {
+		font-size: 14px;
+	}
+	.game__player, .game__computer {
+		padding: 3px 14px;
+	}
+	.shape {
+		padding: 3px 6px;
+	}
+	img {
+		width: 200px;
+	}
+	.row__first {
+		font-size: 14px;
+	}
+	.row__second {
+		font-size: 28px;
+	}
+	.row__third {
+		gap: 20px;
+	}
+	.row__fourth {
+		gap: 14px;
+		width: 94%;	
+	}
+	.row__fifth {
+		gap: 23px;
+	}
+}
+
+@media (max-width: 470px) {
+	.row__first, .btn, .shape {
+		font-size: 12px;
+	}
+	img {
+		width: 180px;
+	}
 }
